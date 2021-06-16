@@ -1,0 +1,20 @@
+$(window).on('load',function(){
+  chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
+    $('select[name="HourStart"]').prop("selectedIndex",9);
+    $('select[name="MinuteStart"]').prop("selectedIndex",6);
+    $('select[name="HourRest"]').prop("selectedIndex",1);
+    $('select[name="MinuteRest"]').prop("selectedIndex",0);
+    $('select[name="HourEnd"]').prop("selectedIndex",18);
+    $('select[name="MinuteEnd"]').prop("selectedIndex",6);
+    $('select[name="PlanHourStart"]').prop("selectedIndex",9);
+    $('select[name="PlanMinuteStart"]').prop("selectedIndex",6);
+    $('select[name="PlanHourEnd"]').prop("selectedIndex",18);
+    $('select[name="PlanMinuteEnd"]').prop("selectedIndex",6);
+    $('select[name="PlanMinuteEnd"]').prop("selectedIndex",6);
+    $('select[name="PlanHourRest"]').prop("selectedIndex",1);
+    $('select[name="PlanMinuteRest"]').prop("selectedIndex",0);
+    $('select[name="ContentSelect"]').prop("selectedIndex",1);
+    $('input[name="RegistButton"]').click();
+    sendResponse("");
+  });
+})
