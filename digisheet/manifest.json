@@ -17,8 +17,7 @@
     "content_scripts": [
       {
         "matches": [
-          "http://*/*",
-          "https://*/*"
+          "https://vsn.digisheet.com/d/d"
         ],
         "js": [
           "jquery-3.6.0.min.js",
